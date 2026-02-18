@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="id">hello</h1>
+    <button onclick="clickme()">click me</button>
+</body>
+
+<script>
+function clickme() {
+    const h1 = document.getElementById("id");
+    h1.textContent = "hema";
+    h1.style.color="red"
+    h1.style.background="black"
+    h1.style.border="2px solid green"
+    h1.style.fontsize="30px"
+}
+</script>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementById Example</title>
+</head>
+
+<body id="body">
+
+    <h1 id="heading">Hello Hema</h1>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <script>
+        function changeContent() {
+            // Select element
+            const h1 = document.getElementById("heading");
+            const body = document.getElementById("body");
+
+            // Change text
+            h1.textContent = "Welcome to JavaScript";
+
+            // Change text color
+            h1.style.color = "white";
+
+            // Change background color
+            body.style.backgroundColor = "purple";
+        }
+    </script>
+
+</body>
+</html>

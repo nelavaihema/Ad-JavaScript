@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disable Button with Image</title>
+    <style>
+        img {
+            width: 200px;
+            margin-top: 20px;
+            display: none; /* Hide image initially */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="text">Hello Hema</h2>
+
+    <button id="btn" onclick="changeData()">Click Me</button>
+
+    <!-- Image -->
+    <img id="myImage" 
+         src="https://images.pexels.com/photos/34408249/pexels-photo-34408249.jpeg" 
+         alt="Sample Image">
+
+    <script>
+        function changeData() {
+
+            const heading = document.getElementById("text");
+            const button = document.getElementById("btn");
+            const image = document.getElementById("myImage");
+
+            // Change text
+            heading.textContent = "Button Clicked!";
+            heading.style.color = "blue";
+
+            // Disable button
+            button.disabled = true;
+            button.textContent = "Disabled";
+
+            // Show image
+            image.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

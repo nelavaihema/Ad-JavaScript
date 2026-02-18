@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disable Button Example</title>
+</head>
+<body>
+
+    <h2>Click the Button</h2>
+
+    <button id="myBtn" onclick="disableBtn()">Click Me</button>
+
+    <script>
+        function disableBtn() {
+            var button = document.getElementById("myBtn");
+
+            button.innerHTML = "Disabled";
+            button.disabled = true;
+        }
+    </script>
+
+    <br><br>
+
+    <img id="img" 
+         src="https://images.pexels.com/photos/34408249/pexels-photo-34408249.jpeg" 
+         width="250">
+
+    <br><br>
+
+    <button onclick="changeImg()">Change Img</button>
+
+    <script>
+        function changeImg(){
+            document.getElementById("img").src =
+            "https://images.pexels.com/photos/30537433/pexels-photo-30537433.jpeg";
+        }
+    </script>
+    <div id="container"></div>
+
+     <button onclick="addImg()">Add Img</button>
+     <script>
+        function addImg(){
+            const img=document.createElement("img")
+            img.src="https://images.pexels.com/photos/34408249/pexels-photo-34408249.jpeg"
+            img.width="200"
+            img.height="200"
+            document.getElementById("container").appendChild(img)
+        }
+
+     </script>
+     <div id="heading"></div>
+     <button onclick="addHeading()"> Add h1</button>
+     <script>
+        function addHeading(){
+            const h1= document.createElement("h1")
+            h1.textContent="hello hema"
+             document.getElementById("heading").appendChild(h1)
+
+        }
+     </script>
+
+
+
+</body>
+</html>
